@@ -35,16 +35,13 @@ router.get('/:idCategoria/aplicaciones', function (req, res){
 // Obtener la informacion de la aplicacion seleccionada
 // http://localhost:8888/categorias/233/aplicaciones/2/descripcion
 
-router.get('/:idCategoria/aplicaciones/:idAplicacion/descripcion', function(req, res){
+router.get('/:idCategoria/aplicaciones/:idAplicacion', function(req, res){
     categoria.find(
         {
             _id:req.params.idCategoria,
             "aplicaciones._id": mongoose.Types.ObjectId(req.params.idAplicacion)
         },
-        { 
-            "aplicaciones._id.$":true,
-            descripcion: true
-        })
+        {"aplicaciones.$":true})
     .then(result=>{
         res.send(result[0]);
         res.end();
