@@ -1,0 +1,14 @@
+Crear un servicio para listar categorias de aplicaciones y generar el html correspondientes
+Crear un servicio para listar aplicaciones dependiendo de la categoria seleccionada y modificar la generacion
+correspondiente para que no lo haga con LocalStorage
+Crear un servicio para visualizar el detalle de una aplicacionesy generar la informacion a la ventana modal correspondiente
+Crear servicio para agregar un comentario a una aplicacion y genrar el html correspondiente
+Crear un servicio para agregar nueva aplicacion y generar html correspondiente
+Eliminar cualquier codigo relacionado a LocalStorage
+
+
+1.Obtener una lista de las categorias de aplicacion
+2. Obtener las aplicaciones segun la categoria seleccionada
+3. Obtener la informacion de la aplicacion seleccionada
+4. Agregar un comentario a una aplicacion seleccionada
+5.Agregar una nueva aplicacion 
